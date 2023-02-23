@@ -81,7 +81,7 @@ button:active{
     margin-right: 5px;
 }
 
-@media (max-width: 375px){
+@media (max-width: 500px){
     .product{
         display: block;
         margin: 0;
