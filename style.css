@@ -1,0 +1,112 @@
+body{
+    background: hsl(30, 38%, 92%);
+    font-family: 'Montserrat', sans-serif;
+    color: hsl(228, 12%, 48%);
+    font-weight: 500;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+.product{
+    display: flex;
+    height: 62%;
+    border-radius: 10px;
+}
+.right-side{
+    background-color: white;
+    padding-left: 40px;
+    padding-right: 50px;
+    border-radius: 0px 10px 10px 0px;
+}
+.product-img{
+    border-radius: 10px 0px 0px 10px;
+
+}
+.title{
+    font-family: 'Fraunces', serif;
+    width: 200px;
+    color: hsl(212, 21%, 14%);
+}
+.Description{
+    width: 250px;
+    letter-spacing: 0.1em; 
+}
+.prices{
+    display: flex;
+    font-family: 'Fraunces', serif;
+    align-items: center;
+}
+.class{
+    margin-top: 50px;
+    width: 40%;
+    letter-spacing: 0.4em;
+    font-size: 14px; 
+}
+
+.price-now{
+    color: hsl(158, 36%, 37%);
+    font-size: 40px;
+    margin-top: -1px;
+}
+
+.price-old{
+    font-size: 15px;
+    margin-left: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    margin-top: -1px;
+}
+
+button{
+    width: 250px;
+    height: 55px;
+    border-radius: 10px;
+    border: none;
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    cursor: pointer;
+    font-weight: 700;
+    transition: ease .3s;
+}
+button:hover{
+    background-color: hsl(158, 37%, 25%);
+}
+button:active{
+    background-color: hsl(156, 36%, 15%);
+}
+.icon{
+    margin-right: 5px;
+}
+
+@media (max-width: 375px){
+    .product{
+        display: block;
+        margin: 0;
+    }
+    .container{
+        display: block;
+        margin: 0;
+    }
+    .product-img{
+        content:url("/images/image-product-mobile.jpg");
+        width: 100%;
+        margin-bottom: -55px;
+        border-radius: 10px 10px 0px 0px;
+    }
+    .right-side{
+        height: 95%;
+        border-radius: 0px 0px 10px 10px;
+    }
+    .class{
+        padding-top: 20px;
+    }
+    .title{
+        width: 110%;
+    }
+    button{
+        width: 275px;
+    }
+}
